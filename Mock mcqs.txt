@@ -1,0 +1,199 @@
+Which of the following operators used to allocate memory to array variable in Java?
+	
+new malloc 
+	
+malloc 
+	
+alloc 
+	
+new 
+ans)new
+-------
+Which command is used to remove a directory in unix?
+	
+None of the mentioned 
+	
+dldir 
+	
+rdir 
+	
+rmdir 
+	
+rd 
+ans)rmdir
+-------
+Which of the following is not a communication command in unix?
+	
+mail 
+	
+grep 
+	
+write 
+	
+mesg 
+	
+None of the mentioned 
+ans)grep
+----------
+Which of these class is used to read characters and strings?
+	
+BufferedStreamReader 
+	
+StringReader 
+	
+InputStreamReader 
+	
+BufferedReader 
+ans)bufferreader
+-------------
+class Main {
+     public static void main(String args[]) { 
+         int a=10;
+         int b= 20;
+         System.out.println(a+++b++);
+     }
+}
+	
+Compile error 
+	
+30 
+	
+1120 
+	
+31 
+ans)30
+---------------class Main {
+public static void main(String[] args) {
+        int i = 0, j = 9;
+        do {
+            i++;
+            if (j-- < i++) {
+                break;
+            }
+        } while (i < 5);
+        System.out.println(i +" "+ j);
+    }
+}
+	
+6  6 
+	
+5 5 
+	
+5 8 
+	
+None of the mentioned 
+ans)6 6
+----------
+What are div tags used for?
+	
+to logically divide the documents 
+	
+to logically divide the paragraphs 
+	
+to replace paragraphs 
+	
+to provide space between tables 
+ans)to logically divide the documents
+--------------
+A single packet on a data link is known as
+	
+Group 
+	
+Path 
+	
+None of the mentioned 
+	
+Frame 
+	
+Block 
+ans)frame
+---------------
+What are meta tags used for?
+	
+to store information about external links 
+	
+to store the title 
+	
+to only store information about search engines 
+	
+to store information usually relevant for browsers and search engines 
+ans)to store information usually relevant for browsers and search engines
+--------
+public class X { 
+public static void main(String [] args) 
+{ String names [] = new String[5]; 
+for (int x=0; x < args.length; x++) 
+names[x] = args[x]; 
+System.out.println(names[2]); 
+} 
+}
+	
+null 
+	
+Compilation error 
+	
+names 
+	
+exception is thrown at runtime 
+ans)null
+-------------Which of the following is not an array exception in Java?
+	
+NullPointerException 
+	
+ArrayNotFoundException 
+	
+ArrayIndexOutfOBounds 
+	
+ArrayStoreException 
+ans)array not found exception
+-----------------
+If you  are trying to store String in an array of Integer in Java.Which of the following gives ArrayStoreException at runtime?
+	
+None of the mentioned 
+	
+Object[] names = new String[3]; 
+Names[0] = new Integer(0); 
+	
+int[] primes = new int[10];
+primes[0] = "a"; 
+	
+nt[] primes = new int[10];
+Primes[0] = 1; 
+
+ans)Object[] names = new String[3]; 
+Names[0] = new Integer(0); 
+------------------
+if a computer has 64K words, then this memory unit has _______ memory locations.
+	
+65536 
+	
+65000 
+	
+64000 
+	
+64536 
+ans)65536
+-------------
+
+In priority scheduling algorithm, when a process arrives at the ready queue, its priority is compared with the priority of
+	
+init process 
+	
+all process 
+	
+parent process 
+	
+currently running process 
+ans)currently running process 
+---------------
+Which of the following scheduling algorithms gives minimum average waiting time ?
+	
+FCFS 
+	
+Priority 
+	
+SJF 
+	
+Round – robin 
+ans)sjf
+---------------
