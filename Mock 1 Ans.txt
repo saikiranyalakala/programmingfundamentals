@@ -1,0 +1,244 @@
+1)import java.util.Scanner;
+class Main
+{
+   
+ public static void main(String args[]){
+        
+Scanner sc=new Scanner(System.in);
+        
+int sum=sc.nextInt();
+      
+  int prod=sc.nextInt();
+       
+ int flag=0;
+      
+  for(int x=1;x<prod;x++){
+     
+       if(flag==1){
+             
+   break;
+            }
+           
+ for(int y=1;y<prod;y++){
+              
+  if(prod==x*y){
+                 
+   if(sum==x+y){
+                     
+   flag=1;
+                   
+     System.out.println(x+" "+y);
+    
+                    break;
+                    }
+ 
+     
+          }
+            }
+ 
+       }
+        
+        
+ 
+   }
+}
+
+2)
+import java.util.Scanner;
+
+public class Main {
+
+	
+	public static void main(String[] args) {
+		
+	String s="helloworLd";
+	int count=1,k=0,flag=0;
+	String a[]=new String[2*s.length()];
+	for(int i=0;i<s.length();i++){
+		count=1;
+		flag=0;
+		for(int j=0;j<s.length();j++){
+			if(j<i){
+
+				if(s.charAt(i)==s.charAt(j)){
+					flag=1;
+					break;
+				}	
+			}
+			if(s.charAt(i)==s.charAt(j)&&i!=j){
+				count++;
+			}
+		}
+		if(flag==0){
+			
+		a[k]=""+count;
+		k++;
+		a[k]=""+s.charAt(i);
+		k++;}
+		
+	}
+	int n,x,y;
+	String temp,temp1;
+	for(int i=0;i<k;i+=2){
+		for(int j=0;j<k-2-i;j+=2){
+			x=Integer.parseInt(a[j]);
+			y=Integer.parseInt(a[j+2]);
+			if(x<y){
+				temp=a[j];
+				temp1=a[j+1];
+				a[j]=a[j+2];
+				a[j+1]=a[j+3];
+				a[j+2]=temp;
+				a[j+3]=temp1;
+			}
+		}
+		}
+
+	for(int i=1;i<k;i+=2){
+		
+		System.out.print(a[i]);
+	}
+	
+	}
+}
+
+
+3)import java.util.Scanner;
+class Main{
+   
+ public static void main(String args[]){
+     
+
+   Scanner sc=new Scanner(System.in);
+
+        int n=sc.nextInt();
+     
+   String n1=""+n;
+      
+  int len=n1.length();
+       
+ int[] a=new int[len];
+   
+     int count=0;
+       
+ while(n!=0){
+ 
+a[count]=n%10;
+            
+n=n/10;
+          
+  count++;
+        }
+  
+      int temp;
+      
+  for(int i=0;i<len;i++){
+         
+   for(int j=0;j<len-1-i;j++){
+          
+      if(a[j]<a[j+1]){
+                  
+  temp=a[j]   ;
+                 
+   a[j]=a[j+1];
+                   
+ a[j+1]=temp;
+                
+}
+         
+   }
+     
+   }
+      
+  for(int i=0;i<len;i++)
+{
+            System.out.print(a[i]);
+        }
+    }
+}
+
+
+
+5.public class Char_frequency {
+     
+    static final int SIZE = 26;
+      
+    // function to print the character and its 
+    // frequency in order of its occurrence
+    static void printCharWithFreq(String str)
+    {
+         // size of the string 'str'
+        int n = str.length();
+ 
+        // 'freq[]' implemented as hash table
+        int[] freq = new int[SIZE];
+ 
+        // accumulate freqeuncy of each character
+        // in 'str'
+        for (int i = 0; i < n; i++)
+            freq[str.charAt(i) - 'a']++;
+ 
+        // traverse 'str' from left to right
+        for (int i = 0; i < n; i++) {
+ 
+            // if frequency of character str.charAt(i)
+            // is not equal to 0
+            if (freq[str.charAt(i) - 'a'] != 0) {
+ 
+                // print the character along with its
+                // frequency
+                System.out.print(str.charAt(i));
+                System.out.print(freq[str.charAt(i) - 'a'] + " "); 
+ 
+                // update frequency of str.charAt(i) to 
+                // 0 so that the same character is not
+                // printed again
+                freq[str.charAt(i) - 'a'] = 0;
+            }
+        }
+
+
+
+
+naa)))
+class NoOfOccurenceOfCharacters {
+    static final int MAX_CHAR = 256;
+ 
+    static void getOccuringChar(String str)
+    {
+      
+        int count[] = new int[MAX_CHAR];
+ 
+        int len = str.length();
+ 
+        
+        for (int i = 0; i < len; i++)
+            count[str.charAt(i)]++;
+ 
+        
+        char ch[] = new char[str.length()];
+        for (int i = 0; i < len; i++) {
+            ch[i] = str.charAt(i);
+            int find = 0;
+            for (int j = 0; j <= i; j++) {
+ 
+                // If any matches found
+                if (str.charAt(i) == ch[j]) 
+                    find++;                
+            }
+ 
+            if (find == 1) 
+                System.out.println("Number of Occurrence of " +
+                 str.charAt(i) + " is:" + count[str.charAt(i)]);            
+        }
+    }
+    }
+      
+    // Driver program to test above
+    public static void main(String args[])
+    {
+        String str = "geeksforgeeks";
+        printCharWithFreq(str);
+    }
+}
+// This code is contributed by Sumit Ghosh
