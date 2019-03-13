@@ -1,4 +1,5 @@
-package AssignmentNew;
+package com.manipal.pf.demo;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 

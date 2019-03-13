@@ -1,0 +1,64 @@
+package com.manipal.assignment1;
+import java.util.Scanner;
+
+public class PrimeIndexSum {
+
+	public static void main(String[] args) {
+
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the Array Size : ");
+		int n=scan.nextInt();
+		
+		int k,sum=0,count = 0,flag=0,avg;
+		
+		if(n<=0)
+		{
+			System.out.println("Invalid Size");
+		}
+		else
+		{
+			int arr[]=new int[n];
+			
+			for(int i=0;i<arr.length;i++)
+			{
+				arr[i]=scan.nextInt();
+				k=i+1;
+				if(arr[i]<0)
+				{
+					System.out.println("Invalid Element");
+					flag=2;
+					break;
+				}
+				else if(k>1)
+				{
+					for(int j=2;j<=k/2;j++)
+			        {
+			           
+						if(k%j==0)
+			            {
+			            	flag=1;
+			            	break;
+			            }
+						else
+						{
+							flag=0;
+						}
+			        }
+			        if(flag==0)
+			        {
+			          	sum=sum+arr[i];   
+						count++;
+			        }
+			        
+				}
+			}
+			if(flag!=2)
+			{
+				avg = sum/count;
+				System.out.println(avg);
+			
+			}
+		}
+	}
+
+}

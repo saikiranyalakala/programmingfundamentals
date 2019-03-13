@@ -1,41 +1,29 @@
-package AssignmentNew;
+package com.manipal.pf.demo;
 
 import java.util.Scanner;
 
 public class ElementCount {
-
-	public static void main(String[] args) {
-Scanner sc=new Scanner(System.in);
-int len =sc.nextInt();
-int count=0;
-if(len<0)
-{
-	System.out.println("invalid size");
-}
-else
-{
-	int a[]=new int[len];
-	for(int i=0;i<a.length;i++)
-	{
-		a[i]=sc.nextInt();
-		if (a[i]<0){
-			count=1;
-			System.out.println("invalid element");
-			break;
-		
+		int count=0;
+	public int FindElementCount(int a[],int size,int search){
+		for(int i=0;i<size;i++){
+			if(a[i]==search)
+				count++;
 		}
+		return count;
 	}
-	if(count==0){
-	int n=sc.nextInt();
-	for(int i=0;i<a.length;i++)
-	{
-		if(n==a[i])
-		{
-			count++;
+		public static void main(String[] args) {
+	  Scanner sc=new Scanner(System.in);
+	  System.out.println("enter size");
+	  int size=sc.nextInt();
+	  int a[]=new int[size];
+	  for(int i=0;i<size;i++){
+		  a[i]=sc.nextInt();
 		}
+	  	System.out.println("enter search elemenet");
+	  	int search=sc.nextInt();
+	  	ElementCount ec=new ElementCount();
+	  	ec.FindElementCount(a, size, search);
+	  	System.out.println(ec.count);
+		}
+	  	
 	}
-	System.out.println(count);}
-}
-	}
-
-}
