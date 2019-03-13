@@ -1,0 +1,175 @@
+class Main {
+    public static void main(String[] args){
+        int i = 3;
+        switch(i)
+        {
+        case 1: System.out.println("First");
+        case 2: System.out.println("Second");
+        case 3: System.out.println("Third");
+        default: System.out.println("None");
+        }
+    }
+}
+	
+Third
+   None 
+What is the value of a? If a=~10
+-11
+Which of the following operators used to allocate memory to array variable in Java?
+
+new
+Time quantum is defined in
+
+multilevel queue scheduling algorithm 
+
+When ArrayStoreException comes in Java?
+
+when you have stored an element of type other than type of array 
+
+public static void main(String [] args) 
+{ String names [] = new String[5]; 
+for (int x=0; x < args.length; x++) 
+names[x] = args[x]; 
+System.out.println(names[2]); 
+} 
+
+null
+
+class Main {
+public static void main(String[] args)
+    {
+        for (int i = 0;i<3; i++);
+            System.out.println("HELLO");
+    }
+}
+hello
+
+
+ String a = "HelloWorld";
+        String b = "World";
+        if(("Hello"+b==a) || (b!="Hello")) 
+            System.out.println(a);
+    }
+Helloworld
+
+The strategy of making processes that are logically runnable to be temporarily suspended is called :
+Preemptive scheduling 
+
+What happens when given program execute?
+class Main {
+public static void main(String[] args)
+    {
+        for (int i = 0, String = "GFG"; i < 2; i++)
+            System.out.println("HELLO GEEKS");
+    }
+}
+error
+
+class Main {
+public static void main(String[] args)
+    {
+        int a = 10, b = 20;
+        while (a < b) {
+            System.out.println("Hello");
+        }
+    }
+Prints Hello infinite time 
+
+
+class Main {
+     public static void main(String args[]) { 
+         int a=10;
+         int b= 20;
+         b = (a<b) ? a : b;
+         System.out.println(a++);
+         System.out.println(++b); 
+     }
+}
+10
+11
+__________________________________________________
+How can the size of array be chnaged once created?
+Array size cannot be changed 
+Choose the correct code to obtain the given output
+Output:
+A B C D
+A B C
+A B
+A
+	
+a)class Main {
+public static void main(String[] args){
+        int i, j, var = 'A'; 
+        for (i = 4; i >= 1; i++) {
+        for (j = 0; j < i; j++)
+        System.out.printf("%c ", (var + j));
+        System.out.println("");
+        }
+    }
+} 
+	
+b)class Main {
+public static void main(String[] args){
+        int i, j, var = 'A'; 
+        for (i = 4; i >= 1; i--) {
+        for (j = 0; j < i; j++)
+        System.out.println("%c ", (var + j));
+        System.out.println("");
+        }
+    }
+} 
+	
+c)class Main {
+public static void main(String[] args){
+        int i, j, var = 'A'; 
+        for (i = 4; i >= 1; i--) {
+        for (j = 0; j < i; j++)
+        System.out.printf("%c ", (var + j));
+        System.out.println("");
+        }
+    }
+} 
+	
+d)None of the mentioned 
+--------------------------
+If you  are trying to store String in an array of Integer in Java.Which of the following gives ArrayStoreException at runtime?
+	
+Object[] names = new String[3]; 
+Names[0] = new Integer(0); 
+	
+int[] primes = new int[10];
+primes[0] = "a"; 
+	
+nt[] primes = new int[10];
+Primes[0] = 1; 
+	
+None of the mentioned 
+----------------
+class Main {
+public static void main(String[] args)
+    {
+        for (int i = 0;i<3; i++);
+            System.out.println("HELLO");
+    }
+}
+------------
+class Main {
+    public static void main(String[] args){
+        int x=5;
+        if(x>0)
+        System.out.println("Positive");
+        if(x<10)
+        System.out.println("Negative");
+    }
+}
+--------------
+class Main {
+     public static void main(String args[]) { 
+         int a=10;
+         int b= 20;
+         b = (a<b) ? a : b;
+         System.out.println(a++);
+         System.out.println(++b); 
+     }
+}
+	

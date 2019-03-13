@@ -1,0 +1,224 @@
+
+1 boat qsn
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int y=sc.nextInt();
+        int d=sc.nextInt();
+            x+=y;
+            System.out.println(d/x);
+    }
+}
+
+
+2.bigger number
+    import java.util.Scanner;
+public class Main{
+    public static void main(String args[])
+    {
+
+        Scanner sc=new Scanner(System.in);
+
+       int x=sc.nextInt();
+
+        int sum=0;
+
+        while(x>0)
+
+        {
+
+            int rem=x%10;
+
+            x=x/10;
+
+            sum=sum+(9-rem);
+
+        }
+
+        System.out.println(sum);
+
+    }
+
+}
+
+
+3.greatest prime divisor
+
+ import java.util.Scanner;
+
+public class Main{
+
+    public static void main(String args[])
+
+    {
+
+        Scanner sc=new Scanner(System.in);
+
+        int x=sc.nextInt();
+
+        int y=sc.nextInt();
+
+        int gpd=-1,flag=1;
+
+        for(int i=2;i<=x;i++)
+
+        {
+
+            if(x%i==0 && y%i==0)
+
+            {
+
+                for(int j=2;j<i/2;j++)
+
+                {
+
+                    if(i%j==0)
+
+                    {
+
+                        flag=0;
+
+                        break;
+
+                    }
+
+                    else
+
+                    {
+
+                        flag=1;
+
+                    }
+
+                }
+
+                if(flag==1)
+
+                {
+
+                    gpd=i;
+
+                }
+
+            }
+
+             
+
+        }
+
+        System.out.println(gpd);
+
+    }
+
+}
+
+4.
+  import java.util.Scanner;
+class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        int count=0;
+        
+        int arr[] = new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i] = scan.nextInt();
+            
+        }
+        
+        for(int i=1;i<n;i++)
+        {
+            for(int j=0;j<i;j++)
+            {
+                if(arr[i]%arr[j]==0)
+                {
+                     count=count+1;
+                }
+            }
+        }
+        System.out.println(count);
+    }
+}
+
+5.diagonal difference
+
+
+import java.util.Scanner;
+
+public class Main{
+
+    public static void main(String args[])
+
+    {
+
+        Scanner sc=new Scanner(System.in);
+
+        int x=sc.nextInt();
+
+        int a[][]=new int[x][x];
+
+        int sum=0,sum2=0;
+
+        for(int i=0;i<a.length;i++)
+
+        {
+
+            for(int j=0;j<a.length;j++)
+
+            {
+
+                a[i][j]=sc.nextInt();
+
+            }
+
+            sum+=a[i][i];
+
+            sum2+=a[i][x-1-i];
+
+        }
+
+        if(sum>=sum2)
+
+        {
+
+        System.out.println(sum-sum2);
+
+        }
+
+        else
+
+        {
+
+        System.out.println(sum2-sum);
+
+        }
+
+    }
+
+}
+6)  import java.util.Scanner;
+class Main{
+public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int size=sc.nextInt();
+    int out[]=new int[size];
+    int a[]=new int[size];
+    int k=0;
+    for(int i=0;i<size;i++){
+        a[i]=sc.nextInt();
+        k=a[i]-1;
+        out[k]=i+1;
+    }
+    
+    for(int i=0;i<size;i++){
+        System.out.print(out[i]+" ");
+    }
+}
+}
